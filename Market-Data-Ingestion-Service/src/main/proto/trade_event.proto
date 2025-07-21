@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package trade;
+
+option java_package = "com.md.marketdataingestionservice.proto";
+option java_outer_classname = "TradeEventProto";
+//option java_multiple_files = true;
+
+message TradeEvent {
+  string tradeId = 1;
+  string symbol = 2;
+  double price = 3;
+  int32 volume = 4;
+  string timestamp = 5;
+}
